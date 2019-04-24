@@ -5,7 +5,8 @@
 
 Setup your free Apache Kafka instance here: https://www.cloudkarafka.com
 
-Configuration
+Configuration 
+For Unix / Linux Machines 
 
 * `export CLOUDKARAFKA_BROKERS="host1:9094,host2:9094,host3:9094"`
   Hostnames can be found in the Details view in for your CloudKarafka instance.
@@ -15,6 +16,25 @@ Configuration
   Password can be found in the Details view in for your CloudKarafka instance.
 * `export CLOUDKARAFKA_TOPIC="username-topic"`
   Topic should be the same as your username followed by a dash before the topic.
+
+For Windows 8+ machines -- Run Command Mode as Administrator and then edit these 
+My personal Test instance settings 
+
+* `setx CLOUDKARAFKA_BROKERS "velomobile-01.srvs.cloudkafka.com:9094,velomobile-02.srvs.cloudkafka.com:9094,velomobile-03.srvs.cloudkafka.com:9094"`
+
+Hostnames can be found in the Details view in for your CloudKarafka instance.
+
+* `setx CLOUDKARAFKA_USERNAME "g6lq3p1b" `
+
+Username can be found in the Details view in for your CloudKarafka instance.
+
+* `setx CLOUDKARAFKA_PASSWORD "XXuD-bmbHa0RmH27ypk1wfkq6pKGRCGr" `
+
+Password can be found in the Details view in for your CloudKarafka instance.
+
+setx CLOUDKARAFKA_TOPIC "g6lq3p1b-upload" 
+
+Topic should be the same as your username followed by a dash before the topic.
 
 These export commands must be run in both of the terminal windows below.
 
